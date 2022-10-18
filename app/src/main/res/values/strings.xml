@@ -9,11 +9,10 @@
     <string name="key_5">5</string>
     <string name="key_6">6</string>
     <string name="key_plus">+</string>
-    <string name="key_multiply">*</string>
+    <string name="key_multiply">x</string>
     <string name="key_1">1</string>
     <string name="key_2">2</string>
     <string name="key_3">3</string>
-    <string name="key_percent">%</string>
     <string name="key_result">=</string>
     <string name="key_clear">C</string>
     <string name="key_dot">.</string>

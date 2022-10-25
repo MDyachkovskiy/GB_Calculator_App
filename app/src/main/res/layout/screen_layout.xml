@@ -14,7 +14,7 @@
         android:padding="10dp"
         android:text="@string/input_text"
         android:textColor="@color/white"
-        android:textSize="60sp" />
+        android:textSize="40sp" />
 
     <TextView
         android:id="@+id/output_text"

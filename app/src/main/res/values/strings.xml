@@ -17,6 +17,6 @@
     <string name="key_clear">C</string>
     <string name="key_dot">.</string>
     <string name="key_0">0</string>
-    <string name="output_text">1234</string>
-    <string name="input_text">1234</string>
+    <string name="output_text">0</string>
+    <string name="input_text">0</string>
 </resources>

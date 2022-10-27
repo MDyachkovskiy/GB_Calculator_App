@@ -1,5 +1,6 @@
 package Calculator.Application;
 
+import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
@@ -29,6 +30,7 @@ public class MainActivity extends AppCompatActivity {
     MaterialButton button7, button8, button9, button6, button5, button4, button3, button2, button1, button0;
 
 
+    @SuppressLint("WrongViewCast")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -39,53 +41,170 @@ public class MainActivity extends AppCompatActivity {
         inputScreen = findViewById(R.id.input_screen);
         resultScreen = findViewById(R.id.output_text);
 
-        assignId(button0, R.id.btn0);
-        assignId(button1, R.id.btn1);
-        assignId(button2, R.id.btn2);
-        assignId(button3, R.id.btn3);
-        assignId(button4, R.id.btn4);
-        assignId(button5, R.id.btn5);
-        assignId(button6, R.id.btn6);
-        assignId(button7, R.id.btn7);
-        assignId(button8, R.id.btn8);
-        assignId(button9, R.id.btn9);
+        button0 = findViewById(R.id.btn0);
+        button1 = findViewById(R.id.btn1);
+        button2 = findViewById(R.id.btn2);
+        button3 = findViewById(R.id.btn3);
+        button4 = findViewById(R.id.btn4);
+        button5 = findViewById(R.id.btn5);
+        button6 = findViewById(R.id.btn6);
+        button7 = findViewById(R.id.btn7);
+        button8 = findViewById(R.id.btn8);
+        button9 = findViewById(R.id.btn9);
 
-        assignId(buttonDot, R.id.btn_dot);
-        assignId(buttonClear, R.id.btn_clear);
-        assignId(buttonMinus, R.id.btn_minus);
-        assignId(buttonPlus, R.id.btn_plus);
-        assignId(buttonDivision, R.id.btn_division);
-        assignId(buttonMultiply, R.id.btn_multiply);
-        assignId(buttonResult, R.id.btn_result);
+        buttonDot = findViewById(R.id.btn_dot);
+        buttonClear = findViewById(R.id.btn_clear);
+        buttonMinus = findViewById(R.id.btn_minus);
+        buttonPlus = findViewById(R.id.btn_plus);
+        buttonDivision = findViewById(R.id.btn_division);
+        buttonMultiply = findViewById(R.id.btn_multiply);
+        buttonResult = findViewById(R.id.btn_result);
 
         button0.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                inputScreen.setText(inputScreen.getText()+"0");
+                inputScreen.setText(inputScreen.getText() + "0");
             }
         });
 
         button1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                inputScreen.setText(inputScreen.getText()+"1");
+                inputScreen.setText(inputScreen.getText() + "1");
             }
         });
 
-        button0.setOnClickListener(new View.OnClickListener() {
+        button2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                inputScreen.setText(inputScreen.getText()+"0");
+                inputScreen.setText(inputScreen.getText() + "2");
+            }
+        });
+
+        button3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                inputScreen.setText(inputScreen.getText() + "3");
+            }
+        });
+
+        button4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                inputScreen.setText(inputScreen.getText() + "4");
+            }
+        });
+
+        button5.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                inputScreen.setText(inputScreen.getText() + "5");
+            }
+        });
+
+        button6.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                inputScreen.setText(inputScreen.getText() + "6");
+            }
+        });
+
+        button7.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                inputScreen.setText(inputScreen.getText() + "7");
+            }
+        });
+
+        button8.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                inputScreen.setText(inputScreen.getText() + "8");
+            }
+        });
+
+        button9.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                inputScreen.setText(inputScreen.getText() + "9");
+            }
+        });
+
+        buttonPlus.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                allCalculations();
+                currentSymbol = ADDITION;
+                resultScreen.setText(decimalFormat.format(firstValue) + "+");
+                inputScreen.setText(null);
+            }
+        });
+
+        buttonMinus.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                allCalculations();
+                currentSymbol = MINUS;
+                resultScreen.setText(decimalFormat.format(firstValue) + "-");
+                inputScreen.setText(null);
+            }
+        });
+
+        buttonMultiply.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                allCalculations();
+                currentSymbol = MULTIPLY;
+                resultScreen.setText(decimalFormat.format(firstValue) + "*");
+                inputScreen.setText(null);
+            }
+        });
+
+        buttonDivision.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                allCalculations();
+                currentSymbol = DIVISION;
+                resultScreen.setText(decimalFormat.format(firstValue) + "/");
+                inputScreen.setText(null);
+            }
+        });
+
+        buttonDot.setOnClickListener((new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                inputScreen.setText(inputScreen.getText() + ".");
+            }
+        }));
+
+        buttonClear.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if (inputScreen.getText().length() > 0) {
+                    CharSequence currentText = inputScreen.getText();
+                    inputScreen.setText(currentText.subSequence(0, currentText.length() - 1));
+                } else {
+                    firstValue = Double.NaN;
+                    secondValue = Double.NaN;
+                    inputScreen.setText("");
+                    resultScreen.setText("");
+                }
+            }
+        });
+
+        buttonResult.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                allCalculations();
+                resultScreen.setText(decimalFormat.format(firstValue));
+                firstValue = Double.NaN;
+                currentSymbol = "0";
             }
         });
     }
 
-    void assignId(MaterialButton button, int id) {
-        button = findViewById(id);
-        button.setOnClickListener((View.OnClickListener) this);
-    }
 
-    private void allCalculations(){
+    private void allCalculations() {
         if (!Double.isNaN(firstValue)) {
             secondValue = Double.parseDouble(inputScreen.getText().toString());
             inputScreen.setText(null);
@@ -97,11 +216,11 @@ public class MainActivity extends AppCompatActivity {
             else if (currentSymbol == MULTIPLY)
                 firstValue = this.firstValue * secondValue;
             else if (currentSymbol == DIVISION)
-                firstValue = this.firstValue/secondValue;
+                firstValue = this.firstValue / secondValue;
         } else {
             try {
                 firstValue = Double.parseDouble(inputScreen.getText().toString());
-            } catch(Exception e) {
+            } catch (Exception e) {
 
             }
         }

@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.android.material.button.MaterialButton;
@@ -35,6 +36,12 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        if(savedInstanceState != null) {
+            firstValue = Double.parseDouble(savedInstanceState.getString("calculations"));
+            secondValue = Double.parseDouble(savedInstanceState.getString("result"));
+
+        }
 
         decimalFormat = new DecimalFormat("#.##########");
 
@@ -224,5 +231,12 @@ public class MainActivity extends AppCompatActivity {
 
             }
         }
+    }
+
+    @Override
+    protected void onSaveInstanceState(@NonNull Bundle outState) {
+        outState.putString("calculations", String.valueOf(firstValue));
+        outState.putString("result", String.valueOf(secondValue));
+        super.onSaveInstanceState(outState);
     }
 }

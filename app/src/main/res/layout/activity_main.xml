@@ -7,7 +7,7 @@
     android:background="@color/darkBackground"
     android:gravity="center"
     android:orientation="vertical"
-    tools:context=".MainActivity">
+    tools:context="MainActivity">
 
     <include
         android:id="@+id/screen"

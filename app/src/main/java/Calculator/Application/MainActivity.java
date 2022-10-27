@@ -30,23 +30,26 @@ public class MainActivity extends AppCompatActivity {
     MaterialButton buttonPlus, buttonMinus, buttonDivision, buttonMultiply;
     MaterialButton button7, button8, button9, button6, button5, button4, button3, button2, button1, button0;
 
-
     @SuppressLint("WrongViewCast")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        if(savedInstanceState != null) {
-            firstValue = Double.parseDouble(savedInstanceState.getString("calculations"));
-            secondValue = Double.parseDouble(savedInstanceState.getString("result"));
+        inputScreen = findViewById(R.id.input_screen);
+        resultScreen = findViewById(R.id.output_text);
 
+
+        if (savedInstanceState != null) {
+          firstValue = savedInstanceState.getDouble("calculations");
+          secondValue = savedInstanceState.getDouble("result");
+          inputScreen.setText(decimalFormat.format(firstValue));
+          resultScreen.setText(decimalFormat.format(secondValue));
         }
 
         decimalFormat = new DecimalFormat("#.##########");
 
-        inputScreen = findViewById(R.id.input_screen);
-        resultScreen = findViewById(R.id.output_text);
+
 
         button0 = findViewById(R.id.btn0);
         button1 = findViewById(R.id.btn1);
@@ -210,7 +213,6 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
-
     private void allCalculations() {
         if (!Double.isNaN(firstValue)) {
             secondValue = Double.parseDouble(inputScreen.getText().toString());
@@ -232,11 +234,10 @@ public class MainActivity extends AppCompatActivity {
             }
         }
     }
-
     @Override
-    protected void onSaveInstanceState(@NonNull Bundle outState) {
-        outState.putString("calculations", String.valueOf(firstValue));
-        outState.putString("result", String.valueOf(secondValue));
-        super.onSaveInstanceState(outState);
+    protected void onSaveInstanceState(@NonNull Bundle savedInstanceState) {
+        super.onSaveInstanceState(savedInstanceState);
+        savedInstanceState.putDouble("calculations", firstValue);
+        savedInstanceState.putDouble("result", secondValue);
     }
 }

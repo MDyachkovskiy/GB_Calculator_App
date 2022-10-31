@@ -19,10 +19,18 @@
         <item name="android:textSize">@dimen/TextSize</item>
     </style>
 
+    <style name="Input_Text_View_Land" parent="Input_Text_View">
+        <item name="android:textSize">@dimen/inpTextSize_land</item>
+    </style>
+
     <style name="Output_Text_View">
         <item name="fontFamily">@font/custom_font</item>
         <item name="android:textColor">@color/black</item>
         <item name="android:textSize">@dimen/outputTextSize</item>
+    </style>
+
+    <style name="Output_Text_View_Land" parent="Output_Text_View">
+        <item name="android:textSize">@dimen/outTextSize_land</item>
     </style>
 
     // Ландшафтный режим

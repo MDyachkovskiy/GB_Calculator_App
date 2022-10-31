@@ -1,4 +1,4 @@
-<resources xmlns:tools="http://schemas.android.com/tools">
+<resources >
     <!-- Base application theme. -->
     <style name="Theme.GB_Calculator_App" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
         <!-- Primary brand color. -->
@@ -16,7 +16,13 @@
         <item name="numericButtonStyle">@style/Calculator_Button</item>
         <item name="actionButtonStyle">@style/Round_Button</item>
         <item name="android:background">@color/lightBackground</item>
+
         <item name="inputTextView">@style/Input_Text_View</item>
         <item name="outputTextView">@style/Output_Text_View</item>
+
+        <item name="inputTextViewLand">@style/Input_Text_View_Land</item>
+        <item name="outputTextViewLand">@style/Output_Text_View_Land</item>
+
+
    </style>
 </resources>

@@ -8,4 +8,8 @@
         format="reference" />
     <attr name="outputTextView"
         format="reference" />
+    <attr name="inputTextViewLand"
+        format="reference" />
+    <attr name="outputTextViewLand"
+        format="reference" />
 </resources>

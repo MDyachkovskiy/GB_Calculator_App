@@ -18,10 +18,9 @@
         android:layout_rowWeight="1"
         android:layout_column="0"
         android:layout_columnWeight="1"
-        android:backgroundTint="@color/darkBackground"
         android:text="@string/key_7"
-        android:textColor="@color/white"
-        android:textSize="25sp" />
+        style="@style/Calculator_Button"
+         />
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btn8"
@@ -31,10 +30,8 @@
         android:layout_rowWeight="1"
         android:layout_column="1"
         android:layout_columnWeight="1"
-        android:backgroundTint="@color/darkBackground"
         android:text="@string/key_8"
-        android:textColor="@color/white"
-        android:textSize="25sp" />
+        style="@style/Calculator_Button"/>
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btn9"
@@ -44,10 +41,8 @@
         android:layout_rowWeight="1"
         android:layout_column="2"
         android:layout_columnWeight="1"
-        android:backgroundTint="@color/darkBackground"
         android:text="@string/key_9"
-        android:textColor="@color/white"
-        android:textSize="25sp" />
+       style ="@style/Calculator_Button"/>
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btn_minus"
@@ -57,11 +52,8 @@
         android:layout_rowWeight="1"
         android:layout_column="3"
         android:layout_columnWeight="1"
-        android:backgroundTint="@color/lightBackground"
         android:text="@string/key_minus"
-        android:textColor="@color/white"
-        android:textSize="25sp"
-        app:cornerRadius="50dp" />
+        style="@style/Round_Button"/>
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btn_division"
@@ -71,11 +63,9 @@
         android:layout_rowWeight="1"
         android:layout_column="4"
         android:layout_columnWeight="1"
-        android:backgroundTint="@color/lightBackground"
         android:text="@string/key_division"
-        android:textColor="@color/white"
-        android:textSize="25sp"
-        app:cornerRadius="50dp" />
+        app:cornerRadius="50dp"
+        style="@style/Round_Button"/>
 
     <!--  Вторая строка -->
 
@@ -87,10 +77,8 @@
         android:layout_rowWeight="1"
         android:layout_column="0"
         android:layout_columnWeight="1"
-        android:backgroundTint="@color/darkBackground"
         android:text="@string/key_4"
-        android:textColor="@color/white"
-        android:textSize="25sp" />
+        style="@style/Calculator_Button"/>
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btn5"
@@ -100,10 +88,8 @@
         android:layout_rowWeight="1"
         android:layout_column="1"
         android:layout_columnWeight="1"
-        android:backgroundTint="@color/darkBackground"
         android:text="@string/key_5"
-        android:textColor="@color/white"
-        android:textSize="25sp" />
+        style="@style/Calculator_Button"/>
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btn6"
@@ -113,10 +99,8 @@
         android:layout_rowWeight="1"
         android:layout_column="2"
         android:layout_columnWeight="1"
-        android:backgroundTint="@color/darkBackground"
         android:text="@string/key_6"
-        android:textColor="@color/white"
-        android:textSize="25sp" />
+        style="@style/Calculator_Button" />
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btn_plus"
@@ -127,12 +111,8 @@
         android:layout_rowWeight="1"
         android:layout_column="3"
         android:layout_columnWeight="1"
-        android:backgroundTint="@color/lightBackground"
-        android:shadowRadius="@integer/material_motion_duration_medium_1"
         android:text="@string/key_plus"
-        android:textColor="@color/white"
-        android:textSize="25sp"
-        app:cornerRadius="50dp" />
+        style="@style/Round_Button" />
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btn_multiply"
@@ -143,11 +123,8 @@
         android:layout_rowWeight="1"
         android:layout_column="4"
         android:layout_columnWeight="1"
-        android:backgroundTint="@color/lightBackground"
         android:text="@string/key_multiply"
-        android:textColor="@color/white"
-        android:textSize="25sp"
-        app:cornerRadius="50dp" />
+        style="@style/Round_Button" />
 
     <!--  Третья строка -->
 
@@ -159,10 +136,9 @@
         android:layout_rowWeight="1"
         android:layout_column="0"
         android:layout_columnWeight="1"
-        android:backgroundTint="@color/darkBackground"
         android:text="@string/key_1"
-        android:textColor="@color/white"
-        android:textSize="25sp" />
+        style="@style/Calculator_Button"
+         />
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btn2"
@@ -172,10 +148,8 @@
         android:layout_rowWeight="1"
         android:layout_column="1"
         android:layout_columnWeight="1"
-        android:backgroundTint="@color/darkBackground"
         android:text="@string/key_2"
-        android:textColor="@color/white"
-        android:textSize="25sp" />
+        style="@style/Calculator_Button" />
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btn3"
@@ -185,10 +159,8 @@
         android:layout_rowWeight="1"
         android:layout_column="2"
         android:layout_columnWeight="1"
-        android:backgroundTint="@color/darkBackground"
         android:text="@string/key_3"
-        android:textColor="@color/white"
-        android:textSize="25sp" />
+        style="@style/Calculator_Button" />
 
     <!--  Четвертая строка -->
 
@@ -200,10 +172,8 @@
         android:layout_rowWeight="1"
         android:layout_column="0"
         android:layout_columnWeight="1"
-        android:backgroundTint="@color/darkBackground"
         android:text="@string/key_0"
-        android:textColor="@color/white"
-        android:textSize="25sp" />
+        style="@style/Calculator_Button" />
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btn_dot"
@@ -213,10 +183,8 @@
         android:layout_rowWeight="1"
         android:layout_column="1"
         android:layout_columnWeight="1"
-        android:backgroundTint="@color/darkBackground"
         android:text="@string/key_dot"
-        android:textColor="@color/white"
-        android:textSize="25sp" />
+        style="@style/Calculator_Button" />
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btn_clear"
@@ -224,10 +192,8 @@
         android:layout_height="@dimen/btn_height"
         android:layout_rowWeight="1"
         android:layout_columnWeight="1"
-        android:backgroundTint="@color/darkBackground"
         android:text="@string/key_clear"
-        android:textColor="@color/white"
-        android:textSize="25sp" />
+        style="@style/Calculator_Button" />
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btn_result"
@@ -236,10 +202,7 @@
         android:layout_rowWeight="1"
         android:layout_columnSpan="2"
         android:layout_columnWeight="1"
-        android:backgroundTint="@color/lightBackground"
         android:text="@string/key_result"
-        android:textColor="@color/white"
-        android:textSize="25sp"
-        app:cornerRadius="50dp" />
+        style="@style/Round_Button" />
 
 </GridLayout>

@@ -2,4 +2,10 @@
 <resources>
     <attr name="actionButtonStyle"
         format="reference" />
+    <attr name="numericButtonStyle"
+        format="reference" />
+    <attr name="inputTextView"
+        format="reference" />
+    <attr name="outputTextView"
+        format="reference" />
 </resources>

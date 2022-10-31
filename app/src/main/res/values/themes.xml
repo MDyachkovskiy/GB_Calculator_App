@@ -12,5 +12,11 @@
         <!-- Status bar color. -->
         <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
-    </style>
+
+        <item name="numericButtonStyle">@style/Calculator_Button</item>
+        <item name="actionButtonStyle">@style/Round_Button</item>
+        <item name="android:background">@color/lightBackground</item>
+        <item name="inputTextView">@style/Input_Text_View</item>
+        <item name="outputTextView">@style/Output_Text_View</item>
+   </style>
 </resources>

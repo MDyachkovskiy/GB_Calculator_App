@@ -4,17 +4,32 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/darkBackground"
     android:orientation="vertical"
     tools:context="MainActivity">
 
-    <include
-        android:id="@+id/screen"
-        layout="@layout/screen_layout"
+    <TextView
+        android:id="@+id/input_screen"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:gravity="end"
+        android:padding="10dp"
+        android:text="@string/input_text"
+        style="?attr/inputTextView"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/output_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:gravity="end"
+        android:padding="10dp"
+        android:text="@string/output_text"
+        style="?attr/outputTextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/input_screen"/>
 
     <GridLayout
         android:layout_width="match_parent"
@@ -24,7 +39,7 @@
         android:rowCount="4"
         android:useDefaultMargins="true"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/screen">
+        app:layout_constraintTop_toBottomOf="@+id/output_text">
 
         <!--  Первая строка -->
         <com.google.android.material.button.MaterialButton
@@ -35,7 +50,8 @@
             android:layout_rowWeight="1"
             android:layout_column="0"
             android:layout_columnWeight="1"
-            android:text="@string/key_7" />
+            android:text="@string/key_7"
+            style="?attr/numericButtonStyle"/>
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/btn8"
@@ -45,7 +61,8 @@
             android:layout_rowWeight="1"
             android:layout_column="1"
             android:layout_columnWeight="1"
-            android:text="@string/key_8" />
+            android:text="@string/key_8"
+            style="?attr/numericButtonStyle"/>
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/btn9"
@@ -55,7 +72,8 @@
             android:layout_rowWeight="1"
             android:layout_column="2"
             android:layout_columnWeight="1"
-            android:text="@string/key_9" />
+            android:text="@string/key_9"
+            style="?attr/numericButtonStyle"/>
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/btn_minus"
@@ -89,7 +107,8 @@
             android:layout_rowWeight="1"
             android:layout_column="0"
             android:layout_columnWeight="1"
-            android:text="@string/key_4" />
+            android:text="@string/key_4"
+            style="?attr/numericButtonStyle"/>
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/btn5"
@@ -99,7 +118,8 @@
             android:layout_rowWeight="1"
             android:layout_column="1"
             android:layout_columnWeight="1"
-            android:text="@string/key_5" />
+            android:text="@string/key_5"
+            style="?attr/numericButtonStyle"/>
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/btn6"
@@ -109,7 +129,8 @@
             android:layout_rowWeight="1"
             android:layout_column="2"
             android:layout_columnWeight="1"
-            android:text="@string/key_6" />
+            android:text="@string/key_6"
+            style="?attr/numericButtonStyle"/>
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/btn_plus"
@@ -146,7 +167,8 @@
             android:layout_rowWeight="1"
             android:layout_column="0"
             android:layout_columnWeight="1"
-            android:text="@string/key_1" />
+            android:text="@string/key_1"
+            style="?attr/numericButtonStyle"/>
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/btn2"
@@ -156,7 +178,8 @@
             android:layout_rowWeight="1"
             android:layout_column="1"
             android:layout_columnWeight="1"
-            android:text="@string/key_2" />
+            android:text="@string/key_2"
+            style="?attr/numericButtonStyle"/>
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/btn3"
@@ -166,7 +189,8 @@
             android:layout_rowWeight="1"
             android:layout_column="2"
             android:layout_columnWeight="1"
-            android:text="@string/key_3" />
+            android:text="@string/key_3"
+            style="?attr/numericButtonStyle"/>
 
         <!--  Четвертая строка -->
 
@@ -178,7 +202,8 @@
             android:layout_rowWeight="1"
             android:layout_column="0"
             android:layout_columnWeight="1"
-            android:text="@string/key_0" />
+            android:text="@string/key_0"
+            style="?attr/numericButtonStyle"/>
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/btn_dot"
@@ -188,7 +213,8 @@
             android:layout_rowWeight="1"
             android:layout_column="1"
             android:layout_columnWeight="1"
-            android:text="@string/key_dot" />
+            android:text="@string/key_dot"
+            style="?attr/numericButtonStyle"/>
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/btn_clear"
@@ -196,7 +222,8 @@
             android:layout_height="@dimen/btn_height"
             android:layout_rowWeight="1"
             android:layout_columnWeight="1"
-            android:text="@string/key_clear" />
+            android:text="@string/key_clear"
+            style="?attr/numericButtonStyle"/>
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/btn_result"
@@ -206,9 +233,8 @@
             android:layout_rowWeight="1"
             android:layout_columnSpan="2"
             android:layout_columnWeight="1"
-            android:text="@string/key_result" />
-
-
+            android:text="@string/key_result"
+            />
     </GridLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

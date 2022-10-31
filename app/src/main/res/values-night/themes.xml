@@ -13,7 +13,11 @@
         <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
 
-        <item name="materialButtonStyle">@style/Calculator_Button_Night</item>
         <item name="actionButtonStyle">@style/Round_Button_Night</item>
-    </style>
+        <item name="numericButtonStyle">@style/Calculator_Button_Night</item>
+        <item name="android:background">@color/darkBackground</item>
+        <item name="inputTextView">@style/Input_Text_View_Night</item>
+        <item name="outputTextView">@style/Output_Text_View_Night</item>
+
+  </style>
 </resources>

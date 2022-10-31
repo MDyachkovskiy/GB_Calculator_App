@@ -4,7 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/darkBackground"
     android:gravity="center"
     android:orientation="horizontal"
     tools:context="MainActivity">
@@ -21,7 +20,6 @@
     <GridLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/darkBackground"
         android:columnCount="5"
         android:paddingHorizontal="8dp"
         android:rowCount="4"
@@ -62,25 +60,25 @@
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/btn_minus"
+            style="?attr/actionButtonStyle"
             android:layout_width="@dimen/btn_width_land"
             android:layout_height="@dimen/btn_height_land"
             android:layout_row="0"
             android:layout_rowWeight="1"
             android:layout_column="3"
             android:layout_columnWeight="1"
-            android:text="@string/key_minus"
-            style="?attr/actionButtonStyle"/>
+            android:text="@string/key_minus" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/btn_division"
+            style="?attr/actionButtonStyle"
             android:layout_width="@dimen/btn_width_land"
             android:layout_height="@dimen/btn_height_land"
             android:layout_row="0"
             android:layout_rowWeight="1"
             android:layout_column="4"
             android:layout_columnWeight="1"
-            android:text="@string/key_division"
-            style="?attr/actionButtonStyle"/>
+            android:text="@string/key_division" />
 
         <!--  Вторая строка -->
 
@@ -116,6 +114,7 @@
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/btn_plus"
+            style="?attr/actionButtonStyle"
             android:layout_width="@dimen/btn_width_land"
             android:layout_height="@dimen/btn_height_land"
             android:layout_row="1"
@@ -124,11 +123,11 @@
             android:layout_column="3"
             android:layout_columnWeight="1"
             android:text="@string/key_plus"
-            android:textSize="40sp"
-            style="?attr/actionButtonStyle"/>
+            android:textSize="40sp" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/btn_multiply"
+            style="?attr/actionButtonStyle"
             android:layout_width="@dimen/btn_width_land"
             android:layout_height="@dimen/btn_height_land"
             android:layout_row="1"
@@ -136,8 +135,7 @@
             android:layout_rowWeight="1"
             android:layout_column="4"
             android:layout_columnWeight="1"
-            android:text="@string/key_multiply"
-            style="?attr/actionButtonStyle"/>
+            android:text="@string/key_multiply" />
 
         <!--  Третья строка -->
 
@@ -203,15 +201,14 @@
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/btn_result"
+            style="?attr/actionButtonStyle"
             android:layout_width="@dimen/btn_width_land"
             android:layout_height="@dimen/btn_height_land"
             android:layout_rowWeight="1"
             android:layout_columnSpan="2"
             android:layout_columnWeight="1"
-            android:text="@string/key_result"
-            style="?attr/actionButtonStyle"/>
+            android:text="@string/key_result" />
 
     </GridLayout>
-    />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

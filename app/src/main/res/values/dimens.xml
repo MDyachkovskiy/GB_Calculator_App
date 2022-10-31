@@ -7,5 +7,7 @@
     <dimen name="outTextSize_land">40sp</dimen>
     <dimen name="inpTextSize_land">20sp</dimen>
     <dimen name="btn_TextSize">25sp</dimen>
-    <dimen name="corner_Radius">50dp</dimen>
+    <dimen name="corner_Radius">30dp</dimen>
+    <dimen name="TextSize">40sp</dimen>
+    <dimen name="outputTextSize">60sp</dimen>
 </resources>

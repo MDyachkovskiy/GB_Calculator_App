@@ -17,4 +17,9 @@
     <color name="darkButton">#3D63BF</color>
     <color name="actionButton">#4392BD</color>
 
+    // Day theme
+    <color name="lightBackground">#A5B9E8</color>
+    <color name="lightButton">#4F6391</color>
+    <color name="actionButtonLight">#4D626E</color>
+
 </resources>

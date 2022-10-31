@@ -14,6 +14,8 @@ import java.text.DecimalFormat;
 
 public class MainActivity extends AppCompatActivity {
 
+    // Домашнее задание 4 урока
+
     private static final String ADDITION = "+";
     private static final String MINUS = "-";
     private static final String MULTIPLY = "*";

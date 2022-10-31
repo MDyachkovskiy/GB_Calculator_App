@@ -42,12 +42,12 @@ public class MainActivity extends AppCompatActivity {
         resultScreen = findViewById(R.id.output_text);
 
 
-        if (savedInstanceState != null) {
+        /* if (savedInstanceState != null) {
           firstValue = savedInstanceState.getDouble("calculations");
           secondValue = savedInstanceState.getDouble("result");
           inputScreen.setText(decimalFormat.format(firstValue));
           resultScreen.setText(decimalFormat.format(secondValue));
-        }
+        } */
 
         decimalFormat = new DecimalFormat("#.##########");
 

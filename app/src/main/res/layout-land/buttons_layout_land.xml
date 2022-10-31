@@ -9,7 +9,7 @@
     android:useDefaultMargins="true">
 
     <!--  Первая строка -->
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/btn7"
         android:layout_width="@dimen/btn_width_land"
         android:layout_height="@dimen/btn_height_land"
@@ -22,7 +22,7 @@
         android:textColor="@color/white"
         android:textSize="25sp" />
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/btn8"
         android:layout_width="@dimen/btn_width_land"
         android:layout_height="@dimen/btn_height_land"
@@ -35,7 +35,7 @@
         android:textColor="@color/white"
         android:textSize="25sp" />
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/btn9"
         android:layout_width="@dimen/btn_width_land"
         android:layout_height="@dimen/btn_height_land"
@@ -78,7 +78,7 @@
 
     <!--  Вторая строка -->
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/btn4"
         android:layout_width="@dimen/btn_width_land"
         android:layout_height="@dimen/btn_height_land"
@@ -91,7 +91,7 @@
         android:textColor="@color/white"
         android:textSize="25sp" />
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/btn5"
         android:layout_width="@dimen/btn_width_land"
         android:layout_height="@dimen/btn_height_land"
@@ -104,7 +104,7 @@
         android:textColor="@color/white"
         android:textSize="25sp" />
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/btn6"
         android:layout_width="@dimen/btn_width_land"
         android:layout_height="@dimen/btn_height_land"
@@ -150,7 +150,7 @@
 
     <!--  Третья строка -->
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/btn1"
         android:layout_width="@dimen/btn_width_land"
         android:layout_height="@dimen/btn_height_land"
@@ -163,7 +163,7 @@
         android:textColor="@color/white"
         android:textSize="25sp" />
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/btn2"
         android:layout_width="@dimen/btn_width_land"
         android:layout_height="@dimen/btn_height_land"
@@ -176,7 +176,7 @@
         android:textColor="@color/white"
         android:textSize="25sp" />
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/btn3"
         android:layout_width="@dimen/btn_width_land"
         android:layout_height="@dimen/btn_height_land"
@@ -191,7 +191,7 @@
 
     <!--  Четвертая строка -->
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/btn0"
         android:layout_width="@dimen/btn_width_land"
         android:layout_height="@dimen/btn_height_land"
@@ -204,7 +204,7 @@
         android:textColor="@color/white"
         android:textSize="25sp" />
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/btn_dot"
         android:layout_width="@dimen/btn_width_land"
         android:layout_height="@dimen/btn_height_land"
@@ -217,7 +217,7 @@
         android:textColor="@color/white"
         android:textSize="25sp" />
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/btn_clear"
         android:layout_width="@dimen/btn_width_land"
         android:layout_height="@dimen/btn_height_land"

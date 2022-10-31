@@ -14,6 +14,7 @@
         android:padding="10dp"
         android:text="@string/input_text"
         android:textColor="@color/white"
+        android:fontFamily="@font/custom_font"
         android:textSize="@dimen/inpTextSize_land" />
 
     <TextView
@@ -24,7 +25,7 @@
         android:padding="10dp"
         android:text="@string/output_text"
         android:textColor="@color/white"
-        android:textSize="@dimen/outTextSize_land"
-        android:textStyle="bold" />
+        android:fontFamily="@font/custom_font"
+        android:textSize="@dimen/outTextSize_land" />
 
 </LinearLayout>

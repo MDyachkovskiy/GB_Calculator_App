@@ -7,11 +7,14 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
-    <color name="darkBackground">#314A87</color>
-    <color name="lightBackground">#4392BD</color>
+
     <color name="darkGrey">#807777</color>
     <color name="red">#F44336</color>
     <color name="orange">#D65E0F</color>
 
+    // Night theme
+    <color name="darkBackground">#314A87</color>
+    <color name="darkButton">#3D63BF</color>
+    <color name="actionButton">#4392BD</color>
 
 </resources>

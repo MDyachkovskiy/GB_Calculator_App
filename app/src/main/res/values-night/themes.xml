@@ -12,5 +12,8 @@
         <!-- Status bar color. -->
         <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
+
+        <item name="materialButtonStyle">@style/Calculator_Button_Night</item>
+        <item name="actionButtonStyle">@style/Round_Button_Night</item>
     </style>
 </resources>

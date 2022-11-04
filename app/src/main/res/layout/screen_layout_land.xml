@@ -14,18 +14,17 @@
         android:padding="10dp"
         android:text="@string/input_text"
         android:textColor="@color/white"
-        android:textSize="40sp" />
+        android:textSize="@dimen/inpTextSize_land" />
 
     <TextView
         android:id="@+id/output_text"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="end"
         android:gravity="end"
         android:padding="10dp"
         android:text="@string/output_text"
         android:textColor="@color/white"
-        android:textSize="60sp"
+        android:textSize="@dimen/outTextSize_land"
         android:textStyle="bold" />
 
 </LinearLayout>

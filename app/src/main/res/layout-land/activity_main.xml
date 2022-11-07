@@ -8,6 +8,16 @@
     android:orientation="horizontal"
     tools:context="MainActivity">
 
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/numeric_layout"
+        style="?attr/actionButtonStyle"
+        android:text="@string/themeButton"
+        />
+
     <TextView
         android:id="@+id/input_screen"
         style="?attr/inputTextViewLand"
@@ -32,9 +42,11 @@
         app:layout_constraintTop_toBottomOf="@+id/input_screen" />
 
     <GridLayout
+
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:columnCount="5"
+        android:id="@+id/numeric_layout"
         android:paddingHorizontal="8dp"
         android:rowCount="4"
         android:useDefaultMargins="true"

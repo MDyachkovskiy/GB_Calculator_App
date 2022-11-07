@@ -22,4 +22,5 @@
     <string name="c">C</string>
     <string name="_7">7</string>
     <string name="themeButton">Настройки темы</string>
+    <string name="lighModeText">Дневной режим</string>
 </resources>

@@ -10,4 +10,5 @@
     <dimen name="corner_Radius">30dp</dimen>
     <dimen name="TextSize">40sp</dimen>
     <dimen name="outputTextSize">60sp</dimen>
+    <dimen name="themeMenuTextSize">40sp</dimen>
 </resources>

@@ -1,6 +1,7 @@
 package Calculator.Application;
 
 import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
@@ -27,10 +28,12 @@ public class MainActivity extends AppCompatActivity {
     private double secondValue;
     private DecimalFormat decimalFormat;
 
+
     TextView inputScreen, resultScreen;
     MaterialButton buttonResult, buttonClear, buttonDot;
     MaterialButton buttonPlus, buttonMinus, buttonDivision, buttonMultiply;
     MaterialButton button7, button8, button9, button6, button5, button4, button3, button2, button1, button0;
+    MaterialButton goToThemeButton;
 
     @SuppressLint("WrongViewCast")
     @Override
@@ -71,6 +74,8 @@ public class MainActivity extends AppCompatActivity {
         buttonDivision = findViewById(R.id.btn_division);
         buttonMultiply = findViewById(R.id.btn_multiply);
         buttonResult = findViewById(R.id.btn_result);
+
+        goToThemeButton = findViewById(R.id.goToThemeButton);
 
         button0.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -139,6 +144,14 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 inputScreen.setText(inputScreen.getText() + "9");
+            }
+        });
+
+        goToThemeButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent openMenu = new Intent(MainActivity.this, ThemeMenu.class);
+                startActivity(openMenu);
             }
         });
 

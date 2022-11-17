@@ -7,6 +7,17 @@
     android:orientation="vertical"
     tools:context="MainActivity">
 
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/goToThemeButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/numeric_layout"
+        style="?attr/actionButtonStyle"
+        android:text="@string/themeButton"
+        />
+
     <TextView
         android:id="@+id/input_screen"
         android:layout_width="match_parent"
@@ -32,6 +43,7 @@
         app:layout_constraintTop_toBottomOf="@+id/input_screen"/>
 
     <GridLayout
+        android:id="@+id/numeric_layout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:columnCount="5"

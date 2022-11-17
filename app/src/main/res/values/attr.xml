@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="actionButtonStyle"
+        format="reference" />
+    <attr name="numericButtonStyle"
+        format="reference" />
+    <attr name="inputTextView"
+        format="reference" />
+    <attr name="outputTextView"
+        format="reference" />
+    <attr name="inputTextViewLand"
+        format="reference" />
+    <attr name="outputTextViewLand"
+        format="reference" />
+</resources>

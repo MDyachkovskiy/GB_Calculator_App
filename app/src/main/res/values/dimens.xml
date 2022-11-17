@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="btn_height">100dp</dimen>
+    <dimen name="btn_width">0dp</dimen>
+    <dimen name="btn_height_land">50dp</dimen>
+    <dimen name="btn_width_land">0dp</dimen>
+    <dimen name="outTextSize_land">40sp</dimen>
+    <dimen name="inpTextSize_land">20sp</dimen>
+    <dimen name="btn_TextSize">25sp</dimen>
+    <dimen name="corner_Radius">30dp</dimen>
+    <dimen name="TextSize">40sp</dimen>
+    <dimen name="outputTextSize">60sp</dimen>
+</resources>

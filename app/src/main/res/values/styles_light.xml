@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Calculator_Button">
+        <item name="android:fontFamily">@font/custom_font</item>
+        <item name="android:backgroundTint">@color/lightButton</item>
+        <item name="android:textSize">@dimen/btn_TextSize</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="Round_Button" parent="Calculator_Button">
+        <item name="android:backgroundTint">@color/actionButtonLight</item>
+        <item name="cornerRadius">@dimen/corner_Radius</item>
+    </style>
+
+    <style name="Input_Text_View">
+        <item name="fontFamily">@font/custom_font</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/TextSize</item>
+    </style>
+
+    <style name="Input_Text_View_Land" parent="Input_Text_View">
+        <item name="android:textSize">@dimen/inpTextSize_land</item>
+    </style>
+
+    <style name="Output_Text_View">
+        <item name="fontFamily">@font/custom_font</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/outputTextSize</item>
+    </style>
+
+    <style name="Output_Text_View_Land" parent="Output_Text_View">
+        <item name="android:textSize">@dimen/outTextSize_land</item>
+    </style>
+
+    // Ландшафтный режим
+
+    <style name="Calculator_Button_Land" parent="Calculator_Button">
+        <item name="android:textSize">@dimen/btn_TextSize</item>
+    </style>
+
+    <style name="Round_Button_Land" parent="Round_Button">
+        <item name="android:textSize">@dimen/btn_TextSize</item>
+    </style>
+
+
+</resources>

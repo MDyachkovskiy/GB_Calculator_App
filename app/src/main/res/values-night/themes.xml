@@ -13,15 +13,15 @@
         <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
 
-        <item name="actionButtonStyle">@style/Round_Button_Night</item>
-        <item name="numericButtonStyle">@style/Calculator_Button_Night</item>
+        <item name="actionButtonStyle">@style/Round_Button</item>
+        <item name="numericButtonStyle">@style/Calculator_Button</item>
         <item name="android:background">@color/darkBackground</item>
 
-        <item name="inputTextView">@style/Input_Text_View_Night</item>
-        <item name="outputTextView">@style/Output_Text_View_Night</item>
+        <item name="inputTextView">@style/Input_Text_View</item>
+        <item name="outputTextView">@style/Output_Text_View</item>
 
-        <item name="inputTextViewLand">@style/Input_Text_View_Night_Land</item>
-        <item name="outputTextViewLand">@style/Output_Text_View_Night_Land</item>
+        <item name="inputTextViewLand">@style/Input_Text_View_Land</item>
+        <item name="outputTextViewLand">@style/Output_Text_View_Land</item>
 
   </style>
 </resources>

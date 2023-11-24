@@ -6,7 +6,7 @@ The educational calculator application project was completed as part of the cour
 
 <h2>Project Screenshots:</h2>
 
-<img src="https://i.ibb.co.com/zftctFt/IMG-20230922-000403.jpg" alt="project-screenshot" width="200" height="400/"> <img src="https://i.ibb.co.com/41CTjkX/Screenshot-2023-09-22-00-03-20-258-Calculator-Application.jpg" alt="project-screenshot" width="400" height="200/">
+<img src="https://gdurl.com/ULyq" alt="project-screenshot" width="200" height="400/">     <img src="https://gdurl.com/povK" alt="project-screenshot" width="400" height="200/">
 
   
   
